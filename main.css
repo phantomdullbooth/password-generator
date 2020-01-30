@@ -82,3 +82,9 @@ header, footer {
         font-size: 4rem;
     }
 }
+
+@media screen and (min-width: 1800px) { 
+    h3 {
+        font-size: 5.5rem;
+    }
+}
