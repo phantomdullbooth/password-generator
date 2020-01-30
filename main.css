@@ -1,86 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
-body {
-      background-color: black;
-      color: white;
-      font-size: 4rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      height: 100vh;
-      font-family: 'SF Pro Display', sans-serif;
+:root {
+    --techmint: #00b68e;
 }
 
-#header, #footer {
-      height: 60px;
-      color: white;
-      font-size: 0.85rem;
-      width: 100%;
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    height: 98vh;
+    padding: 0 20px;
+    font-size: 0.85rem;
 }
+
+h3 {
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
+}
+
+a {
+    color: white;
+}
+
+header, footer, #password {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    line-height: 150%;
+}
+
 
 #regenerate {
       cursor: alias;
 }
 
 #regenerate:hover {
-      color: #00ff99;
-}
-
-a {
-      color: snow;
-}
-
-#header, #footer, #password {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      color: var(--techmint);
 }
 
 #password {
       font-family: 'Roboto Mono', monospace;
-      color: #00b68e;
+      color: var(--techmint);
       font-weight: 400;
       width: 100%;
+      text-align: center;
 }
 
-
-
-
-
-.slider {
-      -webkit-appearance: none;  /* Override default CSS styles */
-      appearance: none;
-      width: 20%;
-      height: 10px;
-      border-radius: 7px;
-      background: #191919;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s;
+@media screen and (min-width: 420px) { 
+    h3 {
+        font-size: 1.5rem;
     }
-    
-    .slider:hover {
-      opacity: 1;
+}
+
+@media screen and (min-width: 550px) { 
+    h3 {
+        font-size: 2rem;
     }
-    
-    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-    .slider::-webkit-slider-thumb {
-      -webkit-appearance: none; /* Override default look */
-      appearance: none;
-      width: 20px; /* Set a specific slider handle width */
-      height: 20px; /* Slider handle height */
-      border-radius: 100%;
-      background: #05f183; /* Green background */
-      cursor: pointer; /* Cursor on hover */
+}
+
+@media screen and (min-width: 900px) { 
+    h3 {
+        font-size: 2.75rem;
     }
-    
-    .slider::-moz-range-thumb {
-      width: 25px; /* Set a specific slider handle width */
-      height: 25px; /* Slider handle height */
-      border-radius: 100%;
-      background: #05f183; /* Green background */
-      cursor: pointer; /* Cursor on hover */
+}
+
+@media screen and (min-width: 1200px) { 
+    h3 {
+        font-size: 4rem;
     }
+}
