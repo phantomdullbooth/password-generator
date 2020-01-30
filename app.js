@@ -39,7 +39,7 @@ $(() => {
         return password.join('')
     }
 
-    const $password = $('<h3>').text(generatePassword(5)).appendTo('#password')
+    const $password = $('<h3>').text(generatePassword(7)).appendTo('#password')
 
     const $regenerator = $('#regenerate').click(() => {
         location.reload(true);
