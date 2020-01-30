@@ -19,8 +19,12 @@ body {
       width: 100%;
 }
 
-#header {
-      border: 1px solid blue;
+#regenerate {
+      cursor: alias;
+}
+
+#regenerate:hover {
+      color: #00ff99;
 }
 
 a {
