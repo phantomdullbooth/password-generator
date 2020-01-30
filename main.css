@@ -52,11 +52,11 @@ header, footer {
 }
 
 #password {
-      font-family: 'Roboto Mono', monospace;
       color: var(--techmint);
+      font-family: 'Roboto Mono', monospace;
       font-weight: 400;
-      width: 100%;
       text-align: center;
+      width: 100%;
 }
 
 @media screen and (min-width: 420px) { 
